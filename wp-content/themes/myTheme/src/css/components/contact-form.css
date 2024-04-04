@@ -1,0 +1,104 @@
+.contact-form {
+  max-width: 400px;
+}
+.consult__wrapper {
+  padding: 1rem;
+  max-width: 30rem;
+  margin-inline: auto;
+}
+.contact__inner-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 3rem;
+}
+.consult-email {
+  display: grid;
+  gap: 0.7rem;
+  max-width: 400px;
+}
+.contact-form-paragraph {
+  margin-bottom: 2rem;
+}
+.konzultacije-heading {
+  margin-bottom: 1.5rem;
+}
+.consult-mail__input {
+  width: 100%;
+  padding: 1rem;
+  font: inherit;
+  background-color: rgba(0, 0, 0, 0.283);
+  font-weight: 500;
+  border-radius: 6px;
+  color: var(--white);
+  transition: 0.25s;
+  outline: 0;
+  border: 1px solid rgb(255, 255, 255);
+}
+.consult-mail__input:focus {
+  background-color: rgba(52, 52, 52, 0.448);
+}
+.consult-mail__input::placeholder {
+  color: rgba(255, 255, 255, 0.434);
+}
+.consult-mail__submit-btn {
+  border: 1px solid var(--white);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.7rem;
+  transition: 0.25s;
+  width: 100%;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, hsl(124, 36%, 31%), hsl(119, 42%, 41%));
+  font: inherit;
+}
+.consult-mail__submit-btn:hover {
+  background: linear-gradient(90deg, hsl(124, 36%, 36%), hsl(119, 42%, 47%));
+}
+.consult-mail__submit-btn img {
+  width: 20px;
+}
+/* animation */
+.kontakt__animation {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 1rem;
+  height: 400px;
+}
+.kontakt__right-col {
+  display: grid;
+  gap: 2.5rem;
+  white-space: nowrap;
+}
+.kontakt__right-col--inner {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  height: max-content;
+  animation: scroll infinite 20s linear;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.kontakt__right-col--inner img {
+  opacity: 0.5;
+}
+@keyframes scroll {
+  to {
+    transform: translateY(calc(-100% - 2.5rem));
+  }
+}
+.scroll-white-logo {
+  opacity: 1 !important;
+}
+@media (min-width: 768px) {
+  .contact__inner-wrapper {
+    display: grid;
+    grid-template-rows: unset;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+  }
+}

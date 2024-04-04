@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
+body {
+  font-family: "Jura", sans-serif;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+p {
+  line-height: 150%;
+}
+.h2-heading {
+  font-size: clamp(4rem, 10vw, 5rem);
+  margin-bottom: 3rem;
+}
+.h3-heading {
+  font-size: clamp(2rem, 10vw, 5rem);
+}
+.about-heading {
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-heading img {
+  margin-inline: auto;
+  width: clamp(15rem, 20vw, 30rem);
+}
+.about-subheading {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+.about-last-heading {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.portfolio-offer-heading {
+  color: var(--black);
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+.kontakt-info-heading {
+  text-align: center;
+  font-size: 2rem;
+}

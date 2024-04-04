@@ -1,0 +1,16 @@
+.container {
+  width: min(100% - 32px, 1024px);
+  margin-inline: auto;
+}
+.dark-text {
+  color: var(--dark-font-1);
+}
+.swiper-wrapper {
+  height: max-content !important;
+}
+.icon {
+  object-fit: contain;
+}
+.max-width {
+  width: max-content;
+}

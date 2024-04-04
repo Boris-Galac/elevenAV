@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  inset: auto 0;
+  z-index: 2;
+  padding: 1rem;
+}
+.header__logo {
+  width: clamp(7rem, 10vw, 15rem);
+}
+.header-white {
+  width: max-content;
+}
+.header-white[data-active="true"] {
+  display: grid;
+}
+.header-white[data-active="false"] {
+  display: none;
+}
+.header-radovi {
+  background-color: hsl(212, 59%, 94%);
+  box-shadow: 0 11px 16px hsla(0, 0%, 0%, 0.1);
+}
+.header-back-block[data-active="true"] {
+  display: grid;
+  gap: 2rem;
+}
+.header-back-block[data-active="false"] {
+  display: none;
+}

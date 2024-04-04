@@ -1,0 +1,42 @@
+button {
+  border: 0;
+}
+.scroll-down-btn {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 2rem;
+  animation: scroll-down 1s ease-in-out alternate infinite;
+}
+@keyframes scroll-down {
+  from {
+    transform: translateY(0rem);
+  }
+  to {
+    transform: translateY(-1rem);
+  }
+}
+.see-more-btn {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: #f0f0f0;
+  color: var(--black);
+  outline: 2px solid var(--dark-border-btn);
+  font-weight: 900;
+  margin-inline: auto;
+  transition: 0.25s;
+}
+.see-more-btn:hover {
+  background-color: #fff;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+.back-to-home-btn {
+  display: flex;
+  gap: 0.5rem;
+  color: black;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
